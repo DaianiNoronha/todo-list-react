@@ -1,4 +1,4 @@
-import styles from './App.module.css';
+import { Input } from './components/Input';
 import { Header } from './components/Header';
 import './global.css'
 
@@ -6,15 +6,10 @@ import './global.css'
 export function App() {
   
   return (
-    <div>
-      <Header/>
-
-      <div className={styles.wrapper}>
-      
-      </div>
-   
-    </div>
-    
+    <main>
+       <Header/>
+          <Input/>
+    </main> 
   )
 }
 
