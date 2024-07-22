@@ -1,16 +1,19 @@
+// Task.js
 import { CheckCircle, Trash } from 'phosphor-react';
 import styles from './Task.module.css';
 
 export function Task({ content }) {
     return (
-        <div className={styles.tasksContent}>
-            <button className={styles.iconButton}>
-                <CheckCircle size={24} />
-            </button>
-            <p className={styles.pTask}>{content}</p>
-            <button className={styles.iconButton}>
-                <Trash size={24}/>
-            </button>
+        <div className={styles.task}>
+            <p className={styles.pTask}>
+                <button className={styles.iconButtonLeft}>
+                    <CheckCircle size={24} />
+                </button>
+                {content}
+                <button className={styles.iconButtonRight}>
+                    <Trash size={24}/>
+                </button>
+            </p>
         </div>
     );
 }

@@ -1,3 +1,4 @@
+// App.js (parte relevante)
 import { Input } from './components/Input';
 import { Header } from './components/Header';
 import { Create } from './components/Create';
