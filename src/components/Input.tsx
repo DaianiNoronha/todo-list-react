@@ -1,4 +1,3 @@
-import { Trash } from 'phosphor-react';
 import styles from './Input.module.css'
 
 export function Input({
@@ -8,14 +7,10 @@ export function Input({
   HTMLInputElement
 >) {
   return (
-    <div>
-
-      <input
-      className={styles.inputArea}
+    <input
+      className={styles.container}
       placeholder="Adicione uma nova tarefa"
       {...rest}
     />
-    </div>
-    
   )
 }
