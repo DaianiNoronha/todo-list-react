@@ -1,0 +1,38 @@
+.tasksContent {
+    display: flex; /* Utiliza flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    width: 70%;
+    margin: 1rem auto;
+    justify-content: space-between; /* Espaço entre os itens */
+}
+
+.iconButton {
+    background: transparent;
+    border: 0;
+    color: var(--gray-300);
+    cursor: pointer;
+    line-height: 0;
+    border-radius: 2px;
+}
+
+.iconButton:hover {
+    color: var(--danger);
+}
+
+.iconButton.checked {
+    color: var(--blue); /* Cor quando marcado */
+    text-decoration: line-through; /* Riscar o texto */
+}
+
+.pTask {
+    flex: 1; /* Ocupa o espaço restante */
+    margin: 0 10px; /* Margem entre o parágrafo e os botões */
+    color: var(--gray-100);
+    background: var(--gray-500);
+    border-radius: 8px;
+    padding: 2.5rem;
+}
+
+.pTask + .pTask {
+    margin-top: 2rem;
+}
