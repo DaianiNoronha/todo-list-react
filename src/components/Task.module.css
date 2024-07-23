@@ -4,48 +4,43 @@
     margin: 0 auto;
 }
 
+
+/* Task.module.css */
 .pTask {
     position: relative;
-    display: flex; /* Utiliza flexbox */
-    align-items: center; /* Centraliza verticalmente */
+    display: grid; 
+    grid-template-columns: auto 1fr auto; 
+    align-items: center;
     color: var(--gray-100);
     background: var(--gray-500);
     border-radius: 8px;
-    padding: 2.5rem;
-    margin-bottom: 2rem; /* Espaço entre cada tarefa */
+    padding: 2rem 0.5rem;
+    margin-bottom: 1rem;
 }
 
-.iconButtonLeft {
-    background: transparent;
-    border: 0;
-    color: var(--gray-300);
-    cursor: pointer;
-    line-height: 0;
-    border-radius: 2px;
-    margin-right: 1.5rem; /* Espaçamento entre o botão e o texto */
-}
-
-.iconButtonLeft:hover {
-    color: var(--blue);
-}
-
-.iconButtonLeft.checked {
-    color: var(--purple); /* Cor quando marcado */
-    text-decoration: line-through; /* Riscar o texto */
-}
-
+.iconButtonLeft,
 .iconButtonRight {
     background: transparent;
     border: 0;
     color: var(--gray-300);
     cursor: pointer;
     line-height: 0;
-    border-radius: 2px;
-    margin-left: 1.5rem; /* Coloca o botão no final da linha */
+    border-radius: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.iconButtonLeft:hover {
+    color: var(--blue);
 }
 
 .iconButtonRight:hover {
     color: var(--danger);
 }
+
+ /* .iconButtonLeft.checked {
+    color: var(--purple); Cor quando marcado
+    text-decoration: line-through; 
+}  */
 
 
