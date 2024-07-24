@@ -1,5 +1,5 @@
 .container {
-  border: 1px solid var(--gray-700);
+  border: 1px solid var(--gray-800);
   border-radius: 8px;
 
   background-color: var(--gray-500);
@@ -10,6 +10,7 @@
   width: 100%;
 
   line-height: 140%;
+  font-size: 1.2rem;
 }
 
 .container::placeholder {
@@ -18,5 +19,5 @@
 }
 
 .container:focus {
-  border-color: var(--purple-dark);
+  background-color: var(--gray-700)
 }
