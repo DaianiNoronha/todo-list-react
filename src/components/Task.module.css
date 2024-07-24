@@ -1,11 +1,8 @@
-/* Task.module.css */
 .task {
     width: 70%;
     margin: 0 auto;
 }
 
-
-/* Task.module.css */
 .pTask {
     position: relative;
     display: grid; 
@@ -46,7 +43,7 @@
 .iconChecked {
     background: transparent;
     border: 0;
-    color: var(--purple);
+    color: var(--purpleDark);
     cursor: pointer;
     line-height: 0;
     border-radius: 1rem;
@@ -55,7 +52,7 @@
 }
 
 .iconButtonLeft:hover {
-    color: var(--blue);
+    color: var(--purple);
 }
 
 .iconButtonRight:hover {

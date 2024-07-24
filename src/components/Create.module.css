@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: center;
   
-    height: 3.25rem;
-    padding: 1rem;
+    height: 1.25rem;
+    padding: 2rem 1.5rem;
   
     background-color: var(--blueDark);
     color: var(--gray-100);
@@ -16,7 +16,7 @@
   
     line-height: 140%;
     font-weight: bold;
-    font-size: 0.875rem;
+    font-size: 1rem;
   
     transition: 0.2s;
   }

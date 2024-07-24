@@ -12,12 +12,12 @@ export function App() {
     const [tasks, setTasks] = useState<TaskProps[]>([
         {
             id: 1,
-            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aperiam earum odit culpa recusandae deleniti fugit omnis labore voluptatem aliquam.',
+            content: 'Finalizar o Projeto em ReactJS de um "ToDo List", e fundamentar conceitos de estado, imutabilidade do estado, listas e chaves no ReactJS, propriedades e componentização.',
             isCompleted: true
         },
         {
             id: 2,
-            content: 'Bru ipsum dolor sit amet consectetur adipisicing elit. Possimus aperiam earum odit culpa recusandae deleniti fugit omnis labore voluptatem aliquam.',
+            content: 'Estudar para a certificação AI-900, e realizar dois simulados por dia até sexta-feira.',
             isCompleted: false
         },
     ]);
@@ -53,23 +53,31 @@ export function App() {
     }
 
     return (
-        <div>
+        <div className={styles.wrapper}>
             <Header />
-            <div className={styles.div}>
+            <div className={styles.areaTask}>
+                <div className={styles.div}>
                 <Input value={inputValue} onChange={e => setInputValue(e.target.value)} />
                 <Create onClick={() => handleCreateTask(inputValue)} />
             </div>
             <section>
                 <div>
                     <div className={styles.titleTop}>
-                        <h4 className={styles.title}>Tarefas criadas {tasks.length}</h4>
-                        <h4 className={styles.titleDois}>Concluídas {countTasksCompleted()} de {tasks.length}</h4>
+                        <div className={styles.titleCount}>
+                            <h4 className={styles.title}>Tarefas criadas</h4>
+                            <p className={styles.pCount}>{tasks.length}</p>
+                        </div>
+                        <div className={styles.titleCount}>
+                            <h4 className={styles.titleDois}>Concluídas</h4>
+                            <p className={styles.pCount}>{countTasksCompleted()} de {tasks.length}</p>
+                        </div> 
                     </div>
                     {tasks.map(task => (
                         <Task key={task.id} {...task} onDeleteTask={deleteTask} onCompletedTask={completedTask} />
                     ))}
                 </div>
             </section>
+            </div>
         </div>
     );
 }
