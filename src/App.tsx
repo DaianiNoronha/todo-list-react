@@ -21,23 +21,22 @@ const tasks: TaskProps[] = [
 ];
 
 export function App() {
-    const [newTaskContent, setNewTaskContent] = useState('');
+    const [inputValue, setInputValue] = useState('');
     const [taskList, setTaskList] = useState<TaskProps[]>(tasks);
 
     function handleCreateTask(newTaskContent: string) {
         const newTask = {
             id: taskList.length + 1, 
             content: newTaskContent,
+            isCompleted: false,
         };
     
         setTaskList([...taskList, newTask]);
-        setNewTaskContent('');
+        setInputValue('');
     }
 
     function countTasksCompletds (){
         const countCompleted = taskList.filter((task)=> task.isCompleted === true)
-
-        console.log(countCompleted.length);
 
         return countCompleted.length
     } 
@@ -46,9 +45,9 @@ export function App() {
         <div>
             <Header />
             <div className={styles.div}>
-                <Input value={newTaskContent}
-                 onChange={e => setNewTaskContent(e.target.value)}/>
-                <Create onClick={() => handleCreateTask(newTaskContent)} />
+                <Input value={inputValue}
+                 onChange={e => setInputValue(e.target.value)}/>
+                <Create onClick={() => handleCreateTask(inputValue)} />
             </div>
             <section>
                 <div>
@@ -57,7 +56,7 @@ export function App() {
                         <h4 className={styles.titleDois}>Concluídas {countTasksCompletds()} de {taskList.length}</h4>
                     </div>
                     {taskList.map(task => (
-                        <Task key={task.id} content={task.content} />
+                        <Task key={task.id} content={task.content} isCompleted={task.isCompleted} />
                     ))}
                 </div>
             </section>
