@@ -5,6 +5,9 @@
 ## 🖥️ Projeto
 Esse é um projeto Web Responsivo de um ToDo List.
 
+Você pode visualizar o deploy do projeto através
+[desse link](https://todo-list-react-blond-delta.vercel.app/).
+
 ## 📄 Regras e validações
 
 1. Adicionar uma nova tarefa.
