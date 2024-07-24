@@ -4,6 +4,7 @@ import styles from './Task.module.css';
 export interface TaskProps {
     id?: number;
     content: string;
+    isCompleted?: boolean;
 }
 
 export function Task({ content }: TaskProps) {
