@@ -52,13 +52,15 @@ export function App() {
         setTasks(tasksWithoutDeletedOne);
     }
 
+    const isNewTaskEmpty = inputValue.length == 0;
+
     return (
         <div className={styles.wrapper}>
             <Header />
             <div className={styles.areaTask}>
                 <div className={styles.div}>
                 <Input value={inputValue} onChange={e => setInputValue(e.target.value)} />
-                <Create onClick={() => handleCreateTask(inputValue)} />
+                <Create onClick={() => handleCreateTask(inputValue)} disabled={isNewTaskEmpty}/>
             </div>
             <section>
                 <div>
