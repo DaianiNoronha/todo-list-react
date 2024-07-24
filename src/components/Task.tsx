@@ -7,14 +7,16 @@ export interface TaskProps {
     isCompleted?: boolean;
 }
 
-export function Task({ content, isCompleted }: TaskProps) {
+export function Task({ id, content, isCompleted }: TaskProps) {
     
-    console.log(isCompleted);
+    function teste(){
+        console.log(id)
+    }
 
     return (
         <div className={styles.task}>
             <p className={isCompleted ? styles.pTaskChecked : styles.pTask}>
-                <button className={isCompleted ? styles.iconChecked : styles.iconButtonLeft}>
+                <button onClick={teste} className={isCompleted ? styles.iconChecked : styles.iconButtonLeft}>
                     <CheckCircle size={24} />
                 </button>
                 {content}
