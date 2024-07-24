@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+<p align= "center">
+  <img src="/src/assets/projeto-todo.png" alt= "Demonstração do projeto" width= "100%" />
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🖥️ Projeto
+Esse é um projeto Web Responsivo de um ToDo List.
 
-Currently, two official plugins are available:
+## 📄 Regras e validações
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Adicionar uma nova tarefa.
+2. Marcar e desmarcar uma tarefa como concluída.
+3. Remover uma tarefa da listagem.
+4. Mostrar o progresso de conclusão das tarefas.
 
-## Expanding the ESLint configuration
+## 🧠 Objetivos
+Consolidar os fundamentos do react:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Componentização
+- Propriedades
+- Estados
+- Imutabilidade do estado
+- Listas e chaves no ReactJS
 
-- Configure the top-level `parserOptions` property like this:
+## 🚀 Tecnologias 
+Esse projeto foi um desafio desenvolvido totalmente do zero durante a trilha de React da Rocketseat com as tecnologias:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- ReactJS
+- TypeScript
+- Vite
+- HTML5
+- CSS3
+- Git e Github
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 🏷️ Layout
+Você pode visualizar o layout do projeto através
+[desse link](https://www.figma.com/design/3eMnsUwu5oyb3hBTLCftAf/ToDo-List-%E2%80%A2-Desafio-React-(Copy)?node-id=56-96&t=S8BxEc6zt1rRpmyq-0).
+É necessário ter uma conta no [Figma](https://www.figma.com)
+
